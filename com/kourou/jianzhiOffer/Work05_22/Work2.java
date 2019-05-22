@@ -1,9 +1,10 @@
-package com.kourou.jianzhiOffer.Work05_21;
+package com.kourou.jianzhiOffer.Work05_22;
 
 /**
- * 寻找第K大
+ * 数组中的逆序对
  */
 public class Work2 {
+
 
     public static void main(String[] args) {
 
