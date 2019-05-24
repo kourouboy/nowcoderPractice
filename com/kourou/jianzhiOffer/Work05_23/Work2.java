@@ -33,7 +33,7 @@ public class Work2 {
     public static void main(String[] args) {
 
         Work2 work2 = new Work2();
-        System.out.println(work2.chkParenthesis("(3)(3)",6));
+        System.out.println(work2.chkParenthesis("()()",4));
 
     }
 }
