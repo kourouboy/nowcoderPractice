@@ -13,11 +13,10 @@ public class Work2{
         int A1 = 0;
         int A2 = 0;
         int A3 = 0;
-        int A4 = 0;
+        double A4 = 0.0f;
         int A5 = 0;
         int count = 0;
         int j = 0;
-        float avr = 0.0f;
         for (int i = 0; i < N; i++) {
             num[i] = in.nextInt();
             //A1
@@ -38,12 +37,12 @@ public class Work2{
             if (num[i] % 5 == 3){
                 A4 += num[i];
                 count++;
-                avr = A4/count;
             }
             //A5
             if (num[i] % 5 == 4){
-                if (num[i] > A5);
-                A5 = num[i];
+//                if (num[i] > A5);
+//                A5 = num[i];
+                A5 = num[i] > A5 ? num[i] : A5;
             }
         }
         if (A1 != 0){
@@ -63,7 +62,7 @@ public class Work2{
         }
         if (A4 != 0){
             DecimalFormat df =new java.text.DecimalFormat("#.0");
-            System.out.print(df.format(avr) + " ");
+            System.out.print(df.format(A4/count) + " ");
         }else {
             System.out.print('N' + " ");
         }
