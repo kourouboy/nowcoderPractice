@@ -13,14 +13,14 @@ public class Work1 {
         while (in.hasNext()) {
             if (n < 10) {
                 if (m % 10 == n)
-                    System.out.println("YES!");
+                    System.out.println("Yes!");
                 else
-                    System.out.println("NO!");
+                    System.out.println("No!");
             } else {
                 if (m % 100 == n)
-                    System.out.println("YES!");
+                    System.out.println("Yes!");
                 else
-                    System.out.println("NO!");
+                    System.out.println("No!");
             }
         }
     }
